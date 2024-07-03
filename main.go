@@ -1,7 +1,14 @@
 package main
 
-import "fmt"
+import (
+    "fmt"
+    "bufio"
+    //"strings"
+    "os"
+)
 
-func main(){
-  fmt.Println("Let's Go!")
+func main() {
+    scanner := bufio.NewScanner(os.Stdin)
+    scanner.Scan()
+    fmt.Println(scanner.Text())
 }
